@@ -8,7 +8,7 @@ const Header = () => {
   const session = false;
 
   return (
-    <header className="sticky rounded-b-2xl top-0 z-50 bg-white flex justify-between items-center py-4 px-8 shadow-sm">
+    <header className="sticky top-0 z-50 flex items-center justify-between rounded-b-2xl border border-gray-200/60 bg-white py-4 px-8">
       <Image
         src="/images/realmessage-logo.png"
         alt="real message logo"

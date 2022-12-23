@@ -14,7 +14,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className="relative max-w-5xl mx-auto bg-grey-bg">
+      <body className="relative max-w-5xl h-screen mx-auto bg-grey-bg">
         <Header />
         {children}
       </body>
