@@ -8,13 +8,13 @@ const Header = () => {
   const session = false;
 
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between rounded-b-2xl border border-gray-200/60 bg-white py-4 px-8">
-      <Image
+    <header className="sticky top-0 z-50 flex items-center justify-end rounded-b-2xl border border-gray-200/60 bg-white py-4 px-8">
+      {/* <Image
         src="/images/realmessage-logo.png"
         alt="real message logo"
         width={140}
         height={30}
-      />
+      /> */}
 
       {session ? (
         <Button variant="secondary">Log out</Button>
