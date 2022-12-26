@@ -11,7 +11,7 @@ type Props = {
   initialMessages: Message[];
 };
 
-const MessageList = () => {
+const MessageList = ({ initialMessages }: Props) => {
   const {
     data: messages,
     error,
@@ -42,7 +42,7 @@ const MessageList = () => {
 
   return (
     <div className="p-6">
-      {messages?.map((message) => (
+      {(messages || initialMessages)?.map((message) => (
         <div key={message.id} className="py-4">
           <MessageCard message={message} />
         </div>
