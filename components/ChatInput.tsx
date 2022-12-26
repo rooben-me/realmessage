@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState, useCallback } from "react";
+import { FormEvent, useState } from "react";
 import Button from "./Button";
 import { v4 as uuid } from "uuid";
 import { Message } from "@/types";
@@ -54,7 +54,7 @@ const ChatInput = () => {
     <form className="relative" onSubmit={addMessage}>
       <input
         value={input}
-        onChange={useCallback((e: any) => setInput(e.target.value), [input])}
+        onChange={(e: any) => setInput(e.target.value)}
         type="text"
         className="w-full flex-1 rounded-full border border-gray-200/60 bg-grey-bg p-3 pl-5 text-base text-zinc-600 placeholder:text-zinc-400"
         placeholder="say something awesome..."
