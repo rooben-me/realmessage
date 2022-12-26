@@ -38,7 +38,7 @@ const MessageList = ({ initialMessages }: Props) => {
       channel.unbind_all();
       channel.unsubscribe();
     };
-  }, [messages, mutate, clientPusher]);
+  }, [messages, mutate]);
 
   return (
     <div className="p-6">
