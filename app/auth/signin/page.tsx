@@ -1,5 +1,3 @@
-"use client";
-
 import SignInComponent from "@/components/SignInComponent";
 import { getProviders } from "next-auth/react";
 
