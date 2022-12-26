@@ -8,6 +8,7 @@ export default async function HomePage() {
   ).then((res) => res.json());
 
   const messages: Message[] = data.messages;
+
   return (
     <main className="h-full w-full">
       <MessageList initialMessages={messages} />

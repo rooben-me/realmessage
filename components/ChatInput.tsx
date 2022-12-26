@@ -60,7 +60,11 @@ const ChatInput = () => {
         placeholder="say something awesome..."
       />
       {!!input ? (
-        <Button className="absolute top-2 right-2" type="submit">
+        <Button
+          disabled={!input}
+          className="absolute top-2 right-2"
+          type="submit"
+        >
           Send
         </Button>
       ) : null}
